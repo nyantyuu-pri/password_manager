@@ -5,10 +5,10 @@ password_file="passwords.txt"
 
 echo "パスワードマネージャーへようこそ！"
 read -p "サービス名を入力してください: " service_name
-read -p "ユーザー名を入力してください: " username
-read -s -p "パスワードを入力してください: " password
+read -p "ユーザー名を入力してください: " user_name
+read -p "パスワードを入力してください: " password
 echo
 echo "Thank you!"
 
 # サービス名、ユーザー名、パスワードをファイルに追記
-echo "$service_name:$username:$password" >> "$password_file"
+echo "$service_name:$user_name:$password" >> "$password_file"
